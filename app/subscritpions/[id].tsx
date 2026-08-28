@@ -1,11 +1,11 @@
 //import liraries
 import { useLocalSearchParams } from 'expo-router';
-import { View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 
 // create a component
 const SubscriptionDetails = () => {
-    const{id}=useLocalSearchParams<{id:string}>()
-    
+    const { id } = useLocalSearchParams<{ id: string }>()
+
     return (
         <View >
             <Text>Subscription Details: {id}</Text>
