@@ -38,6 +38,7 @@ export const components = {
     tabBar: {
         height: spacing[18],
         horizontalInset: spacing[5],
+        horizontalInsetRatio: "7.5%",
         radius: spacing[8],
         iconFrame: spacing[12],
         itemPaddingVertical: spacing[2],

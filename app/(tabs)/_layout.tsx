@@ -31,12 +31,20 @@ const TabLayout = () => {
             tabBarShowLabel: false,
             tabBarStyle: {
                 position: 'absolute',
+
                 bottom: Math.max(insets.bottom, tabBar.horizontalInset),
+
+                // react-navigation pose start: 0 / end: 0 sur la tab bar.
+                // Yoga donne la priorite a start/end sur left/right : il faut
+                // donc surcharger start/end, sinon la barre reste collee a gauche.
+                start: tabBar.horizontalInsetRatio,
+                end: tabBar.horizontalInsetRatio,
                 height: tabBar.height,
+
                 borderRadius: tabBar.radius,
                 backgroundColor: colors.primary,
                 borderTopWidth: 0,
-                elevation: 0
+                elevation: 0,
             },
             tabBarItemStyle: {
                 paddingVertical: tabBar.height / 2 - tabBar.iconFrame / 1.6
