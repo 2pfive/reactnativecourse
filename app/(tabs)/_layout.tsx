@@ -57,7 +57,7 @@ const TabLayout = () => {
                 tabs.map((tab) => (
                     <Tabs.Screen key={tab.name} name={tab.name}
                         options={{
-                            title: tab.tilte, tabBarIcon: ({ focused }) => (
+                            title: tab.title, tabBarIcon: ({ focused }) => (
                                 <TabIcon focused={focused} icon={tab.icon} />
                             )
                         }} ></Tabs.Screen>
