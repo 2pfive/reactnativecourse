@@ -1,5 +1,5 @@
 import { tabs } from "@/constants/data"
-import { Stack, Tabs } from "expo-router"
+import { Tabs } from "expo-router"
 import { View } from "react-native"
 import clsx from 'clsx'
 import { Image } from "react-native"

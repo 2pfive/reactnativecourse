@@ -1,6 +1,6 @@
 //import liraries
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { Text} from 'react-native';
 import { SafeAreaView as RNSafeArearView } from "react-native-safe-area-context";
 import { styled } from "nativewind"
 const SafeAreaView = styled(RNSafeArearView)
